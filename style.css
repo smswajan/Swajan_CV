@@ -1,0 +1,287 @@
+/*#################################################
+ ##########		Common CSS formatting	##########
+ ##################################################*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-weight: normal;
+
+}
+body{
+	background-color: rgb(255, 255, 255);
+	font-family: 'Lato', sans-serif;
+
+}
+h2{
+	font-family: 'Lato', sans-serif;
+}
+h3{
+	font-family: 'Pacifico', cursive;
+}
+h1{
+	font-family: 'Lato', 'Lobster Two', cursive;
+	float: left;
+	font-size: 50px;
+	margin-top: 55px;
+	margin-left: 15px;
+	letter-spacing: 2px;
+}
+.sub{
+	
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	display: block;
+}
+
+
+.card-nozoom{
+	/*box-shadow: 4px 4px 8px 1px rgba(0,0,0,0.2);*/
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: 0.3s;
+}
+.card {
+	/*box-shadow: 4px 4px 8px 1px rgba(0,0,0,0.2);*/
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: transform 0.1s;
+}
+  
+.card:hover {
+	box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 6px 12px rgba(0,0,0,0.23);
+	transform: scale(1.01);
+}
+
+
+  
+.body-container{
+	padding: 0 30px 0 30px;
+	margin: 0;
+	text-align: left;
+}
+/*	changing default properties of anchor tag	*/
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/*#################################################
+ ##########		Header Part	##########
+ ##################################################*/
+.header{
+	color: white;
+	padding: 10px 25px;
+	font-family: 'Lobster', cursive;
+	position: relative;
+	/*background: linear-gradient(to right, #ed213a, #93291e);*/
+	background: linear-gradient(to bottom right, #4286f4, #373B44);
+	margin-top: 15px;
+
+}
+/*CV*/
+.cv{
+	
+	margin-bottom: 15px;
+	float: left;
+	
+}
+.cv>h3{
+	background-color: rgb(255, 255, 255);
+	border-radius: 8px 0 8px 0;
+	text-align: center;
+	color: #4A00E0;
+	padding: 5px;
+	/* display: inline-block; */
+	
+}
+#sjn{
+	float: left;
+	margin-left: 180px;
+}
+
+.social-icons{
+	float: right;
+	position: absolute;
+	bottom: 5px;
+	right: 15px;
+}
+.social-icons>a>i{
+	color: rgb(223, 223, 223);
+	font-size: 22px;
+	padding-left: 5px;
+	transition: 0.2s;
+}
+.social-icons>a>i:hover{
+	color: white;
+	transform: scale(1.4);
+}
+/*---- Clearing floating elements after header 	----*/
+.header:after{
+	clear: both;
+	display: table;
+	content: "";
+}
+
+
+
+
+/*	Rounded Image	*/
+
+img{
+	border: 4px solid rgb(233, 233, 233);
+	border-radius: 50%;
+	height: 150px;
+	display: block;
+	margin: 0px auto;
+	float: left;
+	transition: transform .2s;
+}
+img:hover{
+	transform: scale(1.1);
+}
+
+
+/*#################################################
+ #####	this section contains mainly 2 columns	#####
+ ##################################################*/
+/*	Here the two column part starts	*/
+/*	First styling the row class	*/
+.row{
+	margin-top: 10px;
+}
+
+/*	Now styling the "col" class	*/
+.col{
+	float: left;
+}
+
+.col-one{
+	width: 23%;
+}
+
+.col-two{
+	width: 73%;
+	margin-left: 4%;
+}
+
+/* width and padding*/
+.pad-wid{
+	width: 100%;
+	padding-left: 0px;
+}
+
+/*		Icon size	 */
+.font-32{
+	font-size: 32px;
+	margin-right: 15px;
+}
+/*	font-20	*/
+.font-20{
+	font-size: 20px;
+}
+/*	Solid line	*/
+.solid-line{
+	border: .5px solid black;
+	border-radius: 50px;
+	height: 0.5px;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 15px;
+}
+
+/*	clearing both floating side of row	*/
+.row:after{
+	clear: both;
+	display: table;
+	content: "";
+}
+
+/*	styling left-item class	*/
+.left-item{
+	margin-bottom: 8px;
+	border-radius: 5px;
+	padding: 15px 15px 15px 15px;
+	background-color: rgb(255, 255, 255);
+}
+.left-item:hover{
+	background: linear-gradient(to bottom right, #4A00E0, rgb(94, 24, 156));
+	color: white;
+
+}
+
+/*	Styling right-item class	*/
+.right-item{
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: white;
+
+}
+h2.right-item-header{
+	font-weight: normal;
+	padding: 8px;
+	border-radius: 8px 8px 0 0;
+	background: linear-gradient(to bottom right, #4A00E0, rgb(94, 24, 156));
+	color: white;
+	margin-bottom: 15px;
+	text-align: center;
+	
+}
+
+
+
+
+
+
+.right-content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-size: 18px;
+
+}
+
+.right-div{
+	width: 50%;
+	margin-bottom: 15px;
+	padding-left: 25px;
+}
+.width-100{
+	width: 100;
+}
+
+/*	Bold Text	*/
+.bold-txt{
+	font-weight: bold;
+}
+
+ul, li{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+/*	Styling footer section	*/
+footer{
+	background: linear-gradient(to bottom right, #4286f4, #373B44);
+	margin-top: 5px;
+	margin-bottom: 15px;
+	float: clear;
+	height: 50px;
+	position: relative;
+}
+.footer-icons{
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.footer-icons>a>i{
+	color: rgb(221, 221, 221);
+	font-size: 22px;
+	margin-right: 8px;
+	transition: .1s;
+}
+.footer-icons>a>i:hover{
+	color: white;
+	transform: scale(1.5);
+}
