@@ -39,12 +39,12 @@ h1{
 .card-nozoom{
 	/*box-shadow: 4px 4px 8px 1px rgba(0,0,0,0.2);*/
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	transition: 0.3s;
+	transition: all 0.3s;
 }
 .card {
 	/*box-shadow: 4px 4px 8px 1px rgba(0,0,0,0.2);*/
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	transition: transform 0.1s;
+	transition: all transform 0.1s;
 }
   
 .card:hover {
@@ -109,7 +109,7 @@ a{
 	color: rgb(223, 223, 223);
 	font-size: 22px;
 	padding-left: 5px;
-	transition: 0.2s;
+	transition: all 0.2s;
 }
 .social-icons>a>i:hover{
 	color: white;
@@ -279,7 +279,7 @@ footer{
 	color: rgb(221, 221, 221);
 	font-size: 22px;
 	margin-right: 8px;
-	transition: .1s;
+	transition: all .1s;
 }
 .footer-icons>a>i:hover{
 	color: white;
